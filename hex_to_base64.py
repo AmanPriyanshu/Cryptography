@@ -19,3 +19,7 @@ base64_data = binascii.b2a_base64(ascii_data)                                   
 print(str(base64_data))                                                                                        #Printing base64_data
 final_flag = ascii_data                                                                                        #Defining final_flag
 print(final_flag)                                                                                              #Final Flag is: "I'm killing your brain like a poisonous mushroom"
+
+
+
+#In one command: print(binascii.b2a_base64(binascii.unhexlify(hex_data)))
