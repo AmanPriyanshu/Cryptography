@@ -22,5 +22,5 @@ key_hex = '686974207468652062756c6c277320657965'
 binary_key = binascii.a2b_hex(key_hex)                         #converting hex to ascii
 final_data = ''
 for i,j in zip(binary_key, binary_input):
-	final_data += chr(i^j)                                     #XORing the 2
+	final_data += chr(ord(i)^ord(j))                                      #XORing the 2
 print(final_data)                                              #printing final_data
